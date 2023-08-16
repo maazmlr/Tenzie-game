@@ -1,0 +1,97 @@
+body{
+  font-size: 16px;
+}
+*{
+  margin: 0;
+}
+.box-holder{
+  padding: 1rem;
+  height: 97.9vh;
+  width: 97.63%;
+  background: #0B2434;
+  overflow: hidden;
+}
+.box{
+  height: 90%;
+  width: 90%;
+  background-color: aliceblue;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+
+}
+h1{
+  font-family: Inter;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+p{
+  font-family: Inter;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.dice-container {
+
+  display: grid;
+  grid-template: auto / repeat(5, 1fr);
+  gap: 2rem;
+  margin: 4rem;
+}
+.die-face {
+  height: 4rem;
+  width: 4rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white ;
+
+}
+h2{
+  
+  font-size: 3rem;
+}
+button{
+  font-family: Inter;
+  font-size: 1rem;
+  width: 7rem;
+height: 3rem;
+background-color: rgb(93, 93, 138);
+color: white;
+cursor: pointer;
+border: none  ;
+position: inherit;
+}
+button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+
+}
+.score-container{
+  margin-top: 1rem;
+  width:  80%;
+  display: flex;
+  justify-content: space-between;
+}
+.Score,.moves{
+  font-family: Inter;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  *{
+    font-size: 15px;
+  }
+}
